@@ -16,9 +16,9 @@ df2 = spark.createDataFrame([R(*i) for i in zip(*data2)])
 df2.show()
 df2.printSchema()
 
-#df3 = spark.read.csv('customer_data.csv', header=True, inferSchema=True)
-#df3.count()
-#len(df3.columns)
-#df3.printSchema()
+df3 = spark.read.csv('customer_data.csv', header=True, inferSchema=True)
+df3.count()
+len(df3.columns)
+df3.printSchema()
 
 
